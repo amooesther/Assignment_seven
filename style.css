@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  background-color: #5b5555;
+  padding: 20px;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #444;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+  background-color: #007bff;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step:target {
+  display: block;
+  padding: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.prev-btn {
+  background-color: #6c757d;
+}
+
+button.prev-btn:hover {
+  background-color: #5a6268;
+}
+
+.form-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+.form-nav a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+}
