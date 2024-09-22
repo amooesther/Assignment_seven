@@ -57,6 +57,9 @@ body {
 .form-step {
   display: none;
 }
+.form-step.active {
+  display: block;
+}
 
 .form-step:target {
   display: block;
